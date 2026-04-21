@@ -1,0 +1,376 @@
+export default function ResumeStyleHomepage() {
+  const publications = [
+    {
+      status: "Accepted",
+      title: "SkyEvents: A Large-Scale Event-enhanced UAV Dataset for Robust 3D Scene Reconstruction",
+      venue: "ICLR 2026",
+      note: "First author · CCF-A · Multimodal 3D reconstruction",
+    },
+    {
+      status: "Submitted",
+      title: "Beyond a Single Light: Benchmarking Large-Scale Aerial Scene Reconstruction Under Varying Illumination",
+      venue: "ECCV 2026",
+      note: "Co-first author · Under review",
+    },
+    {
+      status: "Accepted",
+      title: "Dynamic Scene Dehazing via Event Camera",
+      venue: "CVPR 2026",
+      note: "Event-camera-based dynamic dehazing",
+    },
+    {
+      status: "Accepted",
+      title: "Event Camera Demosaicing via Swin Transformer and Pixel-focus Loss",
+      venue: "CVPR Workshop 2024",
+      note: "Co-author",
+    },
+    {
+      status: "Accepted",
+      title: "Drift of the Uncharted: A Speculative Fiction About Rising Sea-Level Landscapes through Robotic Performance",
+      venue: "SIGGRAPH Asia 2025",
+      note: "Co-author",
+    },
+    {
+      status: "Accepted",
+      title: "Discrete-time heterogeneous multi-agent system formation control with high-fidelity simulation",
+      venue: "CAC 2021",
+      note: "First author",
+    },
+  ];
+
+  const projects = [
+    {
+      title: "Air-Ground Swarm Animal Search in Wetland Environments",
+      period: "Jan 2025 – May 2025",
+      bullets: [
+        "Designed an autonomous perception and tracking framework for UAV/UGV collaboration in real wetland environments.",
+        "Built YOLO-based target detection and classification, UAV scan-route planning, aerial target following, and SLAM-based ground robot approach control.",
+        "Successfully demonstrated searches for rooster, rabbit, duck, dog, cat, and goose; the framework was adopted as a benchmark for participating teams.",
+      ],
+    },
+    {
+      title: "Multi-Agent Collaborative Path Planning in Complex 3D Environments",
+      period: "Jan 2023 – Dec 2023",
+      bullets: [
+        "Studied collision-free route generation for UAV swarms in obstacle-rich 3D scenes.",
+        "Constructed a 3D environmental map and a cost function balancing range and collision risk.",
+        "Combined Grey Wolf Optimization with Deep Reinforcement Learning to iteratively optimize feasible multi-agent flight paths.",
+      ],
+    },
+    {
+      title: "Hybrid Cyber-Physical UGV Platform",
+      period: "Jan 2023 – Dec 2023",
+      bullets: [
+        "Developed a hybrid platform integrating real-world robots with Gazebo-based virtual agents.",
+        "Enabled synchronized execution across physical and simulated systems for large-scale formation experiments under constrained resources.",
+      ],
+    },
+  ];
+
+  const education = [
+    {
+      degree: "Ph.D. in Artificial Intelligence",
+      school: "HKUST(GZ), Information Hub",
+      period: "Jan 2024 – Present",
+      detail: "Advisor: Prof. Hui Xiong · 3D reconstruction, event cameras, low-altitude economy applications, UAV system design and development.",
+    },
+    {
+      degree: "M.Eng. in Navigation, Guidance and Control",
+      school: "Beihang University",
+      period: "Sep 2020 – Jun 2023",
+      detail: "Average score: 85/100 · Modern control theory, intelligent autonomous systems, matrix analysis, software engineering.",
+    },
+    {
+      degree: "B.Sc. in Information and Computing Science",
+      school: "Beihang University",
+      period: "Sep 2016 – Jul 2020",
+      detail: "Average score: 80/100 · Machine learning, Python/Java programming, algebra and geometry.",
+    },
+    {
+      degree: "Exchange Student in Applied Physics",
+      school: "Paris-Saclay University",
+      period: "Sep 2019 – Mar 2020",
+      detail: "Average score: 80/100 · C programming, electronics, mathematical analysis, quantum mechanics.",
+    },
+  ];
+
+  const experience = [
+    {
+      role: "C++ Algorithm Engineer",
+      org: "Institute of Automation, Chinese Academy of Sciences (CASIA)",
+      period: "Aug 2021 – Jun 2022",
+      bullets: [
+        "Built a high-fidelity simulation environment for intelligent aircraft systems in C++.",
+        "Independently completed fixed-wing aircraft dynamics modeling and radar detection system integration.",
+        "Designed and validated control and decision algorithms with closed-loop simulation and robustness testing.",
+      ],
+    },
+    {
+      role: "Team Leader",
+      org: "Thales",
+      period: "Aug 2018 – Jun 2019",
+      bullets: [
+        "Led technical solution design for a smart-airport digital twin system.",
+        "Built a Python + Gazebo/ROS simulation platform with visual feedback and transferred trained policies to physical prototypes.",
+      ],
+    },
+  ];
+
+  const skills = [
+    "C/C++",
+    "Python",
+    "MATLAB/Simulink",
+    "Bash",
+    "Java",
+    "ROS",
+    "Gazebo",
+    "Docker",
+    "Git",
+    "LaTeX",
+    "Event Cameras",
+    "UAV Systems",
+    "Embodied AI",
+    "3D Reconstruction",
+  ];
+
+  return (
+    <div className="min-h-screen bg-neutral-100 text-neutral-900">
+      <div className="mx-auto max-w-6xl px-6 py-8 md:px-8 lg:px-10">
+        <div className="grid gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
+          <aside className="rounded-3xl bg-neutral-900 p-8 text-white shadow-2xl">
+            <div className="sticky top-6">
+              <div className="mb-8 flex items-center gap-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-2xl font-semibold">
+                  马
+                </div>
+                <div>
+                  <h1 className="text-3xl font-bold tracking-tight">马文宗</h1>
+                  <p className="mt-1 text-sm text-neutral-300">Ph.D. Student · AI Researcher</p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-7 text-neutral-300">
+                I work at the intersection of <span className="font-semibold text-white">Embodied AI</span> and <span className="font-semibold text-white">Swarm Intelligence</span>,
+                with a focus on event cameras, 3D reconstruction, UAV systems, and real-world autonomous robotics.
+              </p>
+
+              <div className="mt-8 space-y-3 text-sm text-neutral-300">
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-neutral-500">Phone</div>
+                  <div className="mt-1">+86 18055476667</div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-neutral-500">Email</div>
+                  <div className="mt-1 break-all">wma423@connect.hkust-gz.edu.cn</div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-neutral-500">Affiliation</div>
+                  <div className="mt-1">HKUST(GZ) · AI+ Lab</div>
+                </div>
+                <div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-neutral-500">Languages</div>
+                  <div className="mt-1">Chinese (Native), English (IELTS 7.0), French (DELF B2)</div>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-neutral-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </aside>
+
+          <main className="space-y-6">
+            <section className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+              <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <div className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-500">Personal Homepage</div>
+                  <h2 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Resume-style profile</h2>
+                  <p className="mt-4 max-w-3xl text-base leading-8 text-neutral-600">
+                    Researcher in embodied intelligence, multi-agent systems, event-based vision, and aerial robotics.
+                    Interested in bridging algorithm design, digital twin simulation, and autonomous systems in real-world deployment.
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  <a
+                    href="mailto:wma423@connect.hkust-gz.edu.cn"
+                    className="rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white transition hover:opacity-90"
+                  >
+                    Contact Me
+                  </a>
+                  <a
+                    href="#publications"
+                    className="rounded-2xl border border-neutral-300 px-5 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50"
+                  >
+                    View Papers
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+                <div className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-500">Research Interests</div>
+                <p className="mt-4 text-[15px] leading-8 text-neutral-700">
+                  My research focuses on the intersection of embodied AI and swarm intelligence, covering the full stack from algorithm design and digital-twin simulation to air/ground robotics and autonomous systems in real-world scenarios.
+                </p>
+              </div>
+              <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+                <div className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-500">Highlights</div>
+                <ul className="mt-4 space-y-3 text-[15px] leading-7 text-neutral-700">
+                  <li>• ICLR 2026 first-author paper on event-enhanced UAV 3D reconstruction dataset.</li>
+                  <li>• CVPR 2026 paper on dynamic dehazing via event cameras.</li>
+                  <li>• Experience across simulation, UAV systems, cyber-physical platforms, and multi-agent control.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+              <div className="flex items-center justify-between">
+                <h3 className="text-2xl font-semibold tracking-tight">Education</h3>
+                <span className="text-sm text-neutral-500">Academic background</span>
+              </div>
+              <div className="mt-6 space-y-5">
+                {education.map((item) => (
+                  <div key={item.degree} className="rounded-2xl border border-neutral-200 p-5">
+                    <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+                      <div>
+                        <div className="text-lg font-semibold">{item.degree}</div>
+                        <div className="mt-1 text-neutral-700">{item.school}</div>
+                      </div>
+                      <div className="text-sm text-neutral-500">{item.period}</div>
+                    </div>
+                    <p className="mt-3 text-sm leading-7 text-neutral-600">{item.detail}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5" id="publications">
+              <div className="flex items-center justify-between">
+                <h3 className="text-2xl font-semibold tracking-tight">Selected Publications</h3>
+                <span className="text-sm text-neutral-500">Research output</span>
+              </div>
+              <div className="mt-6 space-y-4">
+                {publications.map((paper, index) => (
+                  <div key={paper.title} className="rounded-2xl border border-neutral-200 p-5">
+                    <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                      <div>
+                        <div className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-500">#{index + 1}</div>
+                        <div className="mt-2 text-lg font-semibold leading-7">{paper.title}</div>
+                        <div className="mt-2 text-sm leading-6 text-neutral-600">{paper.note}</div>
+                      </div>
+                      <div className="flex shrink-0 items-center gap-2">
+                        <span className="rounded-full bg-neutral-900 px-3 py-1 text-xs font-medium text-white">{paper.status}</span>
+                        <span className="rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium text-neutral-700">{paper.venue}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+              <div className="flex items-center justify-between">
+                <h3 className="text-2xl font-semibold tracking-tight">Projects</h3>
+                <span className="text-sm text-neutral-500">Applied systems and robotics</span>
+              </div>
+              <div className="mt-6 space-y-5">
+                {projects.map((project) => (
+                  <div key={project.title} className="rounded-2xl border border-neutral-200 p-5">
+                    <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+                      <div className="text-lg font-semibold">{project.title}</div>
+                      <div className="text-sm text-neutral-500">{project.period}</div>
+                    </div>
+                    <ul className="mt-4 space-y-2 text-sm leading-7 text-neutral-600">
+                      {project.bullets.map((bullet) => (
+                        <li key={bullet}>• {bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-2xl font-semibold tracking-tight">Experience</h3>
+                  <span className="text-sm text-neutral-500">Industry & research</span>
+                </div>
+                <div className="mt-6 space-y-5">
+                  {experience.map((item) => (
+                    <div key={item.role} className="rounded-2xl border border-neutral-200 p-5">
+                      <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+                        <div>
+                          <div className="text-lg font-semibold">{item.role}</div>
+                          <div className="mt-1 text-neutral-700">{item.org}</div>
+                        </div>
+                        <div className="text-sm text-neutral-500">{item.period}</div>
+                      </div>
+                      <ul className="mt-4 space-y-2 text-sm leading-7 text-neutral-600">
+                        {item.bullets.map((bullet) => (
+                          <li key={bullet}>• {bullet}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-2xl font-semibold tracking-tight">Awards</h3>
+                    <span className="text-sm text-neutral-500">Honors</span>
+                  </div>
+                  <ul className="mt-6 space-y-3 text-sm leading-7 text-neutral-600">
+                    <li>• Second Prize Scholarship, China Aerospace Science and Technology Corporation (2022)</li>
+                    <li>• Outstanding Student, Beihang University (2022)</li>
+                    <li>• CSC Full Scholarship for Exchange Study at Paris-Saclay University (2019)</li>
+                  </ul>
+                </div>
+
+                <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-black/5">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-2xl font-semibold tracking-tight">Certificates & Hardware</h3>
+                    <span className="text-sm text-neutral-500">Practical capabilities</span>
+                  </div>
+                  <ul className="mt-6 space-y-3 text-sm leading-7 text-neutral-600">
+                    <li>• CAAC civil UAV pilot license (BVLOS pilot / captain)</li>
+                    <li>• STM32, Raspberry Pi, embedded system integration</li>
+                    <li>• Digital twin and sim-to-real system development</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section className="rounded-3xl bg-neutral-900 p-8 text-white shadow-2xl">
+              <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <div className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-400">Contact</div>
+                  <h3 className="mt-3 text-3xl font-semibold tracking-tight">Let’s build something intelligent.</h3>
+                  <p className="mt-3 max-w-2xl text-sm leading-7 text-neutral-300">
+                    Available for research collaboration in embodied AI, event cameras, multi-agent systems, 3D reconstruction, and robotics deployment.
+                  </p>
+                </div>
+                <a
+                  href="mailto:wma423@connect.hkust-gz.edu.cn"
+                  className="rounded-2xl bg-white px-5 py-3 text-sm font-medium text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  Send Email
+                </a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  );
+}
